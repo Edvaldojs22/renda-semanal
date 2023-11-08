@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,47 +8,61 @@
     <link rel="icon" href="img/dollar.png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
-        <section class="peinel-quantidade">
-            <div class="painel-pacote">
-                <p>Pacotes</p>
-                <input class="caixa" type="number" id="numero-pacote">
+        <button class="caixa botao-limpa-campo" type="reset">Limpar</button>
+        <section class="painelUm">
+            <div class="painel-pacote-quantidade">
+                <div class="painel-pacote">
+                    <p class="texto">Pacotes</p>
+                    <input class="caixa" type="number" id="numero-pacote" >
+                </div>
+
+                <div class="painel-quantidade">
+                    <p class="texto">Quantidade</p>
+                    <input class="caixa" type="number" name="" id="numero-quantidade" required>
+                </div>
             </div>
 
-            <div class="painel-quantidade">
-                <p>Quantidade</p>
-                <input class="caixa" type="number" name="" id="numero-quantidade">
-            </div>
 
-            <button class="caixa botao">
+            <button class="caixa botao" >
                 <p>Calcular</p>
             </button>
         </section>
 
-        <section>
-            <p>Total de peças</p>
-            <div class="caixa ">
-                <p id="total-pecas">0</p>
+        <section class="painelDois">
+            <div class="painel-pecas-valor">
+                <div class="painel-totalPecas">
+                    <p class="texto">Total de peças</p>
+                    <div class="caixa ">
+                        <p class="texto-valor" id="total-pecas">0</p>
+                    </div>
+                </div>
+
+                <div class="painel-totalValor">
+                    <p class="texto">Valor total</p>
+                    <div class="caixa ">
+                        <p class="texto-valor" id="preco-total">0.00 <span></span></p>
+                    </div>
+                </div>
+
             </div>
-            <p>Valor total</p>
-            <div class="caixa ">
-               <p id="preco-total">0.00 <span></span></p>
-            </div>
+
         </section>
 
-        <section>
+        <section class="painelTres">
             <div class="painel-R">
                 <p>R</p>
                 <div class="caixa valor-r">
-                    <p>0.00</p>
+                    <p class="texto-valor">0.00</p>
                 </div>
             </div>
 
             <div class="painel-E">
                 <p>E</p>
                 <div class="caixa valor-e">
-                    <p>0.00</p>
+                    <p class="texto-valor">0.00</p>
                 </div>
             </div>
         </section>
@@ -56,4 +71,5 @@
     </main>
     <script src="index.js"></script>
 </body>
+
 </html>

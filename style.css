@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
-body{
-   display: flex;
-   height: 100vh;
-   align-items: center;
-   justify-content: center;
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: rgb(36, 36, 36);
+    color: rgb(255, 255, 255);
 }
 
 main {
@@ -18,13 +23,107 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
     margin: 0 auto;
 }
 
+.botao-limpa-campo {
+    margin-left: 250px;
+
+}
+
+.painelUm {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.painelDois {
+    width: 350px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.painel-pacote-quantidade,
+.painel-pecas-valor {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+
+
+.painel-pacote,
+.painel-quantidade {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.painelTres {
+    height: 100px;
+    margin: 30px 0;
+
+}
+
+.painel-R,
+.painel-E {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.painel-R {
+    margin-bottom: 20px;
+}
+
+input {
+    text-align: center;
+    outline: none;
+    font-size: 18px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.texto {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.texto-valor {}
+
 .caixa {
     border: solid 1px;
-    width: 100px;
-    height: 30px;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.botao-limpa-campo, .botao{
+   background-color: rgb(1, 1, 27);
+   border-color: rgb(1, 1, 27);
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.botao-limpa-campo:hover{
+    background-color: rgb(3, 3, 93);
+}
+
+.botao:hover{
+    background-color: rgb(3, 3, 93);
 }
