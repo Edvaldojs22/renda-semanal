@@ -12,7 +12,7 @@ body {
     font-family: sans-serif;
     font-size: 17px;
     font-weight: 600;
-    background-color: rgb(36, 36, 36);
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 50%, rgb(254, 254, 254) 50%);
     color: rgb(255, 255, 255);
 }
 
@@ -27,14 +27,44 @@ main {
     margin: 0 auto;
 }
 
+main .caixa {
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nuvem{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 160px;
+    height: 140px;
+}
+
 .botao-limpa-campo {
     margin-left: 250px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border: none;
+}
 
+.botao-limpa-campo img {
+    width: 40px;
+    height: 40px;
 }
 
 .painelUm {
     width: 350px;
     height: 250px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,6 +77,21 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: black;
+}
+
+.painelDois .texto {
+    text-align: center;
+}
+
+.painelDois .caixa {
+    background-color: black;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .painel-pacote-quantidade,
@@ -54,10 +99,8 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: 50px auto;
+    margin: 0 auto;
 }
-
-
 
 .painel-pacote,
 .painel-quantidade {
@@ -71,7 +114,29 @@ main {
 .painelTres {
     height: 100px;
     margin: 30px 0;
+}
 
+.painelTres .texto {
+    color: black;
+}
+
+.caixa .texto {
+    color: white;
+}
+
+#preco-total {
+    color: green;
+}
+
+.painelTres .caixa {
+    background-color: black;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
 }
 
 .painel-R,
@@ -93,37 +158,4 @@ input {
 
 button {
     cursor: pointer;
-}
-
-.texto {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.texto-valor {}
-
-.caixa {
-    border: solid 1px;
-    width: 130px;
-    height: 40px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.botao-limpa-campo, .botao{
-   background-color: rgb(1, 1, 27);
-   border-color: rgb(1, 1, 27);
-    color: whitesmoke;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.botao-limpa-campo:hover{
-    background-color: rgb(3, 3, 93);
-}
-
-.botao:hover{
-    background-color: rgb(3, 3, 93);
 }

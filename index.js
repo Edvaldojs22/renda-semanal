@@ -9,7 +9,7 @@ const campoPecasTotal = document.querySelector('#total-pecas');
 const campoPrecoTotal = document.querySelector('#preco-total');
 
 //Mostra valor para R e E
-const campoValrR = document.querySelector('.valor-r');
+const campoValorR = document.querySelector('.valor-r');
 const campoValorE = document.querySelector('.valor-e');
 
 //Botao Limpa campos
@@ -32,7 +32,7 @@ calcular.addEventListener('click', () => {
     campoPrecoTotal.textContent = precoTotal.toFixed(2) + "$";
 
     valorR = pecaTotal * 0.19;
-    campoValrR.textContent = `${valorR.toFixed(2)}$`;
+    campoValorR.textContent = `${valorR.toFixed(2)}$`;
 
     valorE = pecaTotal * 0.26;
     campoValorE.textContent = `${valorE.toFixed(2)}$`;
