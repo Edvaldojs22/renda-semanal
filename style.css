@@ -12,7 +12,7 @@ body {
     font-family: sans-serif;
     font-size: 17px;
     font-weight: 600;
-    background: linear-gradient(to bottom, rgb(0, 0, 0) 50%, rgb(254, 254, 254) 50%);
+    background: linear-gradient(to top, rgb(255, 255, 255) 50%, rgb(5, 0, 0) 50%);
     color: rgb(255, 255, 255);
 }
 
@@ -37,6 +37,8 @@ main .caixa {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    color: white;
 }
 
 .nuvem{
@@ -47,14 +49,6 @@ main .caixa {
     height: 140px;
 }
 
-.botao-limpa-campo {
-    margin-left: 250px;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    background-color: red;
-    border: none;
-}
 
 .botao-limpa-campo img {
     width: 40px;
@@ -64,11 +58,11 @@ main .caixa {
 .painelUm {
     width: 350px;
     height: 250px;
-    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    color: black;
 }
 
 .painelDois {
@@ -77,7 +71,7 @@ main .caixa {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: black;
+    color: rgb(255, 254, 254);
 }
 
 .painelDois .texto {
@@ -85,7 +79,7 @@ main .caixa {
 }
 
 .painelDois .caixa {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     width: 130px;
     height: 40px;
     border-radius: 10px;
@@ -111,17 +105,21 @@ main .caixa {
     align-items: center;
 }
 
+.painel-pacote-quantidade .texto{
+    margin: 10px 0;
+}
+
 .painelTres {
     height: 100px;
     margin: 30px 0;
 }
 
 .painelTres .texto {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .caixa .texto {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #preco-total {
@@ -129,7 +127,7 @@ main .caixa {
 }
 
 .painelTres .caixa {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     width: 130px;
     height: 40px;
     border-radius: 10px;
@@ -155,6 +153,16 @@ input {
     outline: none;
     font-size: 18px;
 }
+
+.botao-limpa-campo {
+    margin-left: 250px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border: none;
+}
+
 
 button {
     cursor: pointer;

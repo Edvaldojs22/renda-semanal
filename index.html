@@ -11,27 +11,6 @@
 
 <body>
     <main>
-        <img class="nuvem" src="img/nuvem.png" alt="">
-        <button class="botao-limpa-campo" type="reset"><img src="img/rotate-right-solid.svg" alt=""></button>
-        <section class="painelUm">
-            <div class="painel-pacote-quantidade">
-                <div class="painel-pacote">
-                    <p class="texto">Pacotes</p>
-                    <input class="caixa" type="number" id="numero-pacote" >
-                </div>
-
-                <div class="painel-quantidade">
-                    <p class="texto">Quantidade</p>
-                    <input class="caixa" type="number" name="" id="numero-quantidade" required>
-                </div>
-            </div>
-
-
-            <button class="caixa botao" >
-                <p>Calcular</p>
-            </button>
-        </section>
-
         <section class="painelDois">
             <div class="painel-pecas-valor">
                 <div class="painel-totalPecas">
@@ -44,7 +23,7 @@
                 <div class="painel-totalValor">
                     <p class="texto">Valor total</p>
                     <div class="caixa ">
-                        <p class=" texto texto-valor" id="preco-total" >0.00 <span></span></p>
+                        <p class=" texto texto-valor" id="preco-total">0.00 <span></span></p>
                     </div>
                 </div>
 
@@ -56,17 +35,36 @@
             <div class="painel-R">
                 <p class="texto">R</p>
                 <div class="caixa valor-r">
-                    <p class="texto-valor" >0.00</p>
+                    <p class="texto-valor">0.00</p>
                 </div>
             </div>
 
             <div class="painel-E">
                 <p class="texto">E</p>
                 <div class="caixa valor-e">
-                    <p class="texto-valor" >0.00</p>
+                    <p class="texto-valor">0.00</p>
                 </div>
             </div>
         </section>
+
+        <section class="painelUm">
+            <div class="painel-pacote-quantidade">
+                <div class="painel-pacote">
+                    <p class="texto">Pacotes</p>
+                    <input class="caixa" type="number" id="numero-pacote" placeholder="0">
+                </div>
+
+                <div class="painel-quantidade">
+                    <p class="texto">Quantidade</p>
+                    <input class="caixa" type="number" name="" id="numero-quantidade" placeholder="0" required>
+                </div>
+            </div>
+
+            <button class="caixa botao">
+                <p>Calcular</p>
+            </button>
+        </section>
+         <button class="botao-limpa-campo" type="reset"><img src="img/rotate-right-solid.svg" alt=""></button>
 
 
     </main>
